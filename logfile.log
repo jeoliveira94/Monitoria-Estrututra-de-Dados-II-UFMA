@@ -1,0 +1,48 @@
+2019-03-27 09:55:23.598049
+Filename : 1000a_2000v.gr
+Vertices : 1000
+Edges : 2976
+Elapsed Time : 00 days, 00 hour, 00 minutes, 41 seconds
+-------------------------------
+2019-03-27 09:56:01.836595
+Filename : 1000vertices.gr
+Vertices : 1000
+Edges : 2970
+Elapsed Time : 00 days, 00 hour, 00 minutes, 24 seconds
+-------------------------------
+2019-03-27 10:14:17.957000
+Filename : 10000vertices.gr
+Vertices : 10000
+Edges : 30024
+Elapsed Time : 00 days, 00 hour, 00 minutes, 49 seconds
+-------------------------------
+2019-03-27 10:51:59.540190
+Filename : 100vertices.gr
+Vertices : 100
+Edges : 296
+Elapsed Time : 00 days, 00 hour, 00 minutes, 15 seconds
+-------------------------------
+2019-03-27 15:47:15.683957
+Filename : 100b.gr
+Vertices : 100
+Edges : 244
+Elapsed Time : 00 days, 00 hour, 00 minutes, 35 seconds
+-------------------------------
+2019-03-27 15:49:44.243023
+Filename : 100c.gr
+Vertices : 100
+Edges : 243
+Elapsed Time : 00 days, 00 hour, 00 minutes, 21 seconds
+-------------------------------
+2019-03-27 15:50:20.877445
+Filename : 100c.gr
+Vertices : 100
+Edges : 247
+Elapsed Time : 00 days, 00 hour, 00 minutes, 09 seconds
+-------------------------------
+2019-03-27 17:01:05.568429
+Filename : 100000vertices.gr
+Vertices : 100000
+Edges : 350221
+Elapsed Time : 00 days, 01 hour, 09 minutes, 58 seconds
+-------------------------------
