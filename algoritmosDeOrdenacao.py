@@ -1,3 +1,8 @@
+#comparacoes
+#print(int(arestas[0]['weight']) > int(arestas[1]['weight']))
+#print(int(arestas[0]['weight']) < int(arestas[1]['weight']))
+#print(int(arestas[0]['weight']) == int(arestas[1]['weight']))
+
 def insertionSort(colecao):
     for i in range(1, len(colecao)): 
         key = colecao[i] 

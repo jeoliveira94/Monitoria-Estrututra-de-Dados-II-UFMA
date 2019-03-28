@@ -2,10 +2,7 @@ from grafo import Grafo
 from algoritmosDeOrdenacao import *
 from utils import *
 
-#comparacoes
-#print(int(arestas[0]['weight']) > int(arestas[1]['weight']))
-#print(int(arestas[0]['weight']) < int(arestas[1]['weight']))
-#print(int(arestas[0]['weight']) == int(arestas[1]['weight']))
+
 
 if __name__ == "__main__":
     
