@@ -8,7 +8,7 @@
 - A coleção é uma lista de arestas
 - Para comparar o peso as arestas entre dois item da coleção basta usar a chave 'weight' (peso)
 
-##Exemplos:
+### Exemplos:
 - Modo convencional
 colecao[i] <operador de comparacao> colecao[j]
 colecao[i] <operador de comparacao> colecao[j]
