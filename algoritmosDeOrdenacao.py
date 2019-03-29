@@ -16,4 +16,4 @@ int(colecao[i]['weight']) <operador de comparacao> int(colecao[j]['weight'])
 '''
 
 def insertionSort(colecao):
-    return
+    return colecao
