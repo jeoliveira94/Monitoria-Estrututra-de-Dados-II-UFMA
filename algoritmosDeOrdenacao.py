@@ -12,7 +12,7 @@ colecao[i] <operador de comparacao> colecao[j]
 - Modo que você vai usar
 int(colecao[i]['weight']) <operador de comparacao> int(colecao[j]['weight'])
 
-É nescessário converter o valor pra Interger no momento da comparação afim de eviter erros
+É nescessário converter o valor pra Interger no momento da comparação a fim de eviter erros
 '''
 
 def insertionSort(colecao):
