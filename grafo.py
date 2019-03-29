@@ -8,10 +8,16 @@ class Grafo(object):
         self.arestas = None
         return
 
+    def _algortmoDeOrdencaoErro(self):
+        if self.algoritimoDeOrdenacao is None: 
+            print('Algoritmo de Ordencação Nulo, finalizando programa.')
+            raise ValueError
+
     def estabelecerAlgoritmoDeOrdencao(self, algoritimoDeOrdenacao):
         self.algoritimoDeOrdenacao = algoritimoDeOrdenacao
 
     def executarKruskal(self):
+        self._algortmoDeOrdencaoErro()
         return self._kruskal()
 
     def _conectaDuasArvoresDiferentes(self, floresta, aresta):
@@ -36,9 +42,7 @@ class Grafo(object):
                 floresta.append(novaArvore)
 
     def _kruskal(self):
-        print('executando kruskal, aguarde...')        
-        # {'id': '1'}
-        # {'source': '1', 'target': '43', 'weight': '-143'} 
+        print('Executando kruskal, aguarde...')
         floresta =  [ [vertice['id'] ] for vertice in self.vertices]
         arvoreGeradoraMinima = []
         arestas = self.algoritimoDeOrdenacao(copy.copy(self.arestas))
