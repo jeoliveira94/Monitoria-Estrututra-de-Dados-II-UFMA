@@ -14,9 +14,9 @@ if __name__ == "__main__":
     arquivoDeSaida = 'mst7Vertices.txt'
 
     grafo = Grafo()
-    grafo.estabelecerAlgoritmoDeOrdencao(algoritimoDeOrdenacao)
+    grafo.setAlgoritmoDeOrdencao(algoritimoDeOrdenacao)
     grafo.carregarGrafo(arquivoJson)
 
-    arvoreGeradoraMinima =  grafo.executarKruskal() 
+    arvoreGeradoraMinima =  grafo._kruskal() 
     SalvarArvoreGeradoraMinimaEmArquivo(arquivoDeSaida, arvoreGeradoraMinima)
 

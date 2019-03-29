@@ -1,20 +1,21 @@
 import json
 import copy
+import time
 
 class Grafo(object):
     def __init__(self):
-        self.algoritimoDeOrdenacao = None
+        self.ordenar = None
         self.vertices = None
         self.arestas = None
         return
 
     def _algortmoDeOrdencaoErro(self):
-        if self.algoritimoDeOrdenacao is None: 
+        if self.ordenar is None: 
             print('Algoritmo de Ordencação Nulo, finalizando programa.')
             raise ValueError
 
-    def estabelecerAlgoritmoDeOrdencao(self, algoritimoDeOrdenacao):
-        self.algoritimoDeOrdenacao = algoritimoDeOrdenacao
+    def setAlgoritmoDeOrdencao(self, algoritimoDeOrdenacao):
+        self.ordenar = algoritimoDeOrdenacao
 
     def executarKruskal(self):
         self._algortmoDeOrdencaoErro()
@@ -43,9 +44,15 @@ class Grafo(object):
 
     def _kruskal(self):
         print('Executando kruskal, aguarde...')
+        print('Ordenando arestas')
+        self._algortmoDeOrdencaoErro()
         floresta =  [ [vertice['id'] ] for vertice in self.vertices]
         arvoreGeradoraMinima = []
-        arestas = self.algoritimoDeOrdenacao(copy.copy(self.arestas))
+        inicio = time.time()
+        arestas = self.ordenar(copy.copy(self.arestas))
+        fim = time.time()
+        print("Tempo de execução do algoritmo de ordenação : " ,fim - inicio)
+
         while len(arestas):
             aresta = arestas.pop(0)
             if(self._conectaDuasArvoresDiferentes(floresta, aresta)):
