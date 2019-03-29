@@ -10,9 +10,8 @@
 
 ## Exemplos:
 - Modo convencional
-  - colecao[i] <operador de comparacao> colecao[j]
-  - colecao[i] <operador de comparacao> colecao[j]
+  - colecao[i] operador de comparacao colecao[j]
 
 - Modo que você vai usar
--- int(colecao[i]['weight']) <operador de comparacao> int(colecao[j]['weight'])
--- É nescessário converter o valor pra Interger no momento da comparação a fim de evitar erros
+  - int(colecao[i]['weight']) <operador de comparacao> int(colecao[j]['weight'])
+  - É nescessário converter o valor pra Interger no momento da comparação a fim de evitar erros
