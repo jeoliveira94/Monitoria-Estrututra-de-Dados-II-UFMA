@@ -18,5 +18,5 @@ if __name__ == "__main__":
     grafo.carregarGrafo(arquivoJson)
 
     arvoreGeradoraMinima =  grafo.executarKruskal() 
-    escrever(arquivoDeSaida, arvoreGeradoraMinima)
+    SalvarArvoreGeradoraMinimaEmArquivo(arquivoDeSaida, arvoreGeradoraMinima)
 
