@@ -45,9 +45,9 @@ class Grafo(object):
         print('Executando kruskal, aguarde...')
         floresta =  [ [vertice['id'] ] for vertice in self.vertices]
         arvoreGeradoraMinima = []
-        arestas = self.algoritimoDeOrdenacao(copy.copy(self.arestas))
-        while len(arestas):
-            aresta = arestas.pop(0)
+        arestasOrdenadas = self.algoritimoDeOrdenacao.ordenar( copy.copy(self.arestas) )
+        while len(arestasOrdenadas):
+            aresta = arestasOrdenadas.pop(0)
             if(self._conectaDuasArvoresDiferentes(floresta, aresta)):
                 arvoreGeradoraMinima.append(aresta)
                 self._concatenaArvores(floresta, aresta)
