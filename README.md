@@ -1,4 +1,4 @@
-# monitoria-ed2
+# Monitoria Estrututra de Dados II-UFMA
 ## Introdução
 - Implemente o algoritmo de ordenação no arquivo algoritmosDeOrdenacao.py
 - Instruções básicas de como fazer a implementação estão inicio do arquivo algoritmosDeOrdenacao.py
