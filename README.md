@@ -1,9 +1,11 @@
 # Monitoria Estrututra de Dados II-UFMA
+## Importante
+- Deve ser usado o python3 para executar o projeto, leitura do json usando o python3 retorna uma estrutura com objetos strings, já a leitura do json usando o python2 retorna uma estrutura com objetos unicode. 
 ## Introdução
 - Implemente o algoritmo de ordenação no arquivo algoritmosDeOrdenacao.py
-- Instruções básicas de como fazer a implementação estão inicio do arquivo algoritmosDeOrdenacao.py
+- Instruções básicas de como fazer a implementação estão inicio do arquivo /src/algoritmosDeOrdenacao.py
 
-## algoritmosDeOrdenacao.py
+## /src/algoritmosDeOrdenacao.py
 - Implementar algoritmo de ordenação que receba uma colecão
 - A coleção é uma lista de arestas
 - Para comparar o peso as arestas entre dois item da coleção basta usar a chave 'weight' (peso)
