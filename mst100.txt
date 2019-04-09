@@ -1,6 +1,0 @@
-fonte: 1, destino: 4, peso: 5
-fonte: 5, destino: 3, peso: 5
-fonte: 4, destino: 6, peso: 6
-fonte: 2, destino: 5, peso: 7
-fonte: 1, destino: 2, peso: 7
-fonte: 5, destino: 7, peso: 9
