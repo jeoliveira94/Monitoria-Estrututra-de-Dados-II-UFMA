@@ -1,5 +1,6 @@
 import json
 import copy
+import numpy as np
 
 class Grafo(object):
     def __init__(self):
@@ -50,8 +51,10 @@ class Grafo(object):
         arestasOrdenadas = self.algoritimoDeOrdenacao.ordenar( copy.copy(self.arestas) )
         # Ordencão das arestas finalizada
         
-        while len(arestasOrdenadas):
-            aresta = arestasOrdenadas.pop(0)
+        pop = 0
+        while len(arestasOrdenadas) > pop:
+            aresta = arestasOrdenadas[pop]
+            pop+=1
             if(self._conectaDuasArvoresDiferentes(floresta, aresta)):
                 arvoreGeradoraMinima.append(aresta)
                 self._concatenaArvores(floresta, aresta)
@@ -61,6 +64,6 @@ class Grafo(object):
         print('Carregando grafo, aguarde...')
         with open(arquivoJson) as arquivo:
             grafo_json = json.loads(arquivo.read())
-            self.vertices = grafo_json['graph']['nodes']
-            self.arestas = grafo_json['graph']['edges']
+            self.vertices = np.asarray(grafo_json['graph']['nodes'])
+            self.arestas = np.asarray(grafo_json['graph']['edges'])
         return True    
